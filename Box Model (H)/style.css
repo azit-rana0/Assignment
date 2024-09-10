@@ -1,0 +1,41 @@
+ * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .main {
+    width: 700px;
+    border: 2.5px solid red;
+    padding: 10px;
+    margin: 20px;
+ }
+
+ .main > h1, .para {
+    border: 2.5px solid red;
+    margin-top: 20px;
+    padding: 10px;
+ }
+
+ .para2 {
+   margin-top: 20px;
+   padding: 5px;
+ }
+
+ .main > p > span, a {
+    border: 2.5px solid red;
+    padding: 5px 8px;
+ }
+
+ .main > ul, li {
+    border: 2.5px solid red;
+ }
+
+ ul {
+    margin-top: 20px;
+    padding: 10px;
+ }
+
+ li {
+    padding: 10px;
+ }
