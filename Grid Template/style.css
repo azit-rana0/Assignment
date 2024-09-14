@@ -96,4 +96,8 @@ body {
     grid-area: 2/2/3/4;
     background-color: rgb(24,32,46);
     color: white;
+} 
+
+.box5Img {
+    border: 2px solid rgb(117,64,201);
 }

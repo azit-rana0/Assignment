@@ -22,7 +22,7 @@
    padding: 5px;
  }
 
- .main > p > span, a {
+ .main > p > button, a {
     border: 2.5px solid red;
     padding: 5px 8px;
  }
