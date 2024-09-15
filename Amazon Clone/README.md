@@ -1,4 +1,4 @@
-#Project: YouTube Clone
+#Project: Amazon Clone
 
 This project is a simplified Amazon clone created using only HTML and CSS. Below are the screenshots of the UI, along with explanations of the HTML tags and CSS properties used to create each part of the interface.
 
