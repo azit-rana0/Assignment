@@ -1,0 +1,40 @@
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .details {
+        width: 80%;
+        padding-bottom: 50px;
+    }
+
+    .image {
+        width: 80%;
+    }
+
+    img {
+        height: 600px;
+        width: 600px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:476px) {
+    .container {
+        width: 100%;
+    }
+
+    img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .details > .heading {
+        font-size: 2rem;
+    }
+    
+    .details > .para1, .para2 {
+        line-height: 1.3rem;
+        font-weight: 500;
+    }
+
+}
