@@ -1,29 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>link Page</title>
-</head>
-<body>
-    <p>Project 1 - Resume</p>
-    <hr>
-    <a href="../Bittoo Aggarwal/index.html" target="web-page"><img src="./Resume Task.png" alt="Resume" width="100%"></a>
-    <hr><br>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-    <p>Project 2 - Photo Cat App</p>
-    <hr>
-    <a href="../Cat photo App/index.html" target="web-page"><img src="./Cat photo App.png" alt="Cat photo App" width="100%"></a>
-    <hr><br>
+      .content {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: 2px solid #80808064;
+        background: #80808064;
+        margin-bottom: 10px;
 
-    <p>Project 3 - Form</p>
-    <hr>
-    <a href="../Form Task/index.html" target="web-page"><img src="./Form Task.png" alt="Form" width="100%"></a>
-    <hr><br>
+        p {
+          padding-inline: 8px;
+        }
+        .image-div {
+          width: 100%;
+          height: 100%;
+          padding-inline: 4px;
 
-    <p>Project 4 - Tribute Page</p>
-    <hr>
-    <a href="../Tribute Page/index.html" target="web-page"><img src="./Tribute Page.png" alt="Tribute Page" width="100%"></a>
-    <hr>
-</body>
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .content:hover {
+        transition: all 200ms ease-in-out;
+        transform: scale(1.02);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p>Project 1 - Resume</p>
+      <div class="image-div">
+        <a href="../Bittoo Aggarwal/index.html" target="web-page"
+          ><img src="./Resume Task.png" alt="Resume"
+        /></a>
+      </div>
+    </div>
+
+    <div class="content">
+      <p>Project 2 - Photo Cat App</p>
+      <div class="image-div">
+        <a href="../Cat photo App/index.html" target="web-page"
+          ><img src="./Cat photo App.png" alt="Cat photo App"
+        /></a>
+      </div>
+    </div>
+
+    <div class="content">
+      <p>Project 3 - Form</p>
+      <div class="image-div">
+        <a href="../Form Task/index.html" target="web-page"
+          ><img src="./Form Task.png" alt="Form"
+        /></a>
+      </div>
+    </div>
+
+    <div class="content">
+      <p>Project 4 - Tribute Page</p>
+      <div class="image-div">
+        <a href="../Tribute Page/index.html" target="web-page"
+          ><img src="./Tribute Page.png" alt="Tribute Page"
+        /></a>
+      </div>
+    </div>
+  </body>
 </html>
