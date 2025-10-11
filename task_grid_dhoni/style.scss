@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin mainGrid($background-color) {
+  margin-bottom: 2rem;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: $background-color;
+  display: grid;
+  gap: 10px;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+}
+
+@mixin nthsChild($background-color) {
+  background: $background-color;
+}
+
+#main-00 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  section {
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease;
+    position: relative;
+
+    .overlay {
+      background: #000;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      transition: all 0.5s ease;
+      flex-grow: 3;
+    }
+    &:nth-child(1) {
+      background-image: url("https://i.pinimg.com/736x/fd/ef/3d/fdef3df1587f481f436e095b8d318561.jpg");
+    }
+    &:nth-child(2) {
+      background-image: url("https://i.pinimg.com/736x/3e/03/3f/3e033f3a663905c2152eb26c0d979eea.jpg");
+    }
+    &:nth-child(3) {
+      background-image: url("https://i.pinimg.com/736x/80/08/2a/80082a10406ad312c1c713cd08458da8.jpg");
+    }
+    &:nth-child(4) {
+      background-image: url("https://i.pinimg.com/736x/55/c3/1c/55c31c39a71dc2003b3bc6893c82d8d7.jpg");
+    }
+    &:nth-child(5) {
+      background-image: url("https://i.pinimg.com/736x/f8/82/3f/f8823f7028296673591dae29c323c621.jpg");
+    }
+    &:nth-child(6) {
+      background-image: url("https://i.pinimg.com/736x/1b/99/a9/1b99a97f98b6c7e1e622a53d2adeae7c.jpg");
+    }
+    &:nth-child(7) {
+      background-image: url("https://i.pinimg.com/736x/ee/57/52/ee575200a368e19ed855fa46d1e42a6e.jpg");
+    }
+  }
+}
+#main-01 {
+  @include mainGrid(#aca9a9cb);
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 10% 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "aside section"
+    "footer footer";
+
+  section {
+    @include flexCenter();
+
+    &:nth-child(1) {
+      @include nthsChild(#5e0404);
+      grid-area: header;
+    }
+    &:nth-child(2) {
+      @include nthsChild(#014901);
+      grid-area: aside;
+    }
+    &:nth-child(3) {
+      @include nthsChild(#01015e);
+      grid-area: section;
+    }
+    &:nth-child(4) {
+      @include nthsChild(#545401);
+      grid-area: footer;
+    }
+  }
+}
+
+#main-02 {
+  @include mainGrid(#aca9a9cb);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 35% 1fr;
+  grid-template-areas:
+    "header header header"
+    "section section section"
+    "card1 card2 card3";
+
+  section {
+    @include flexCenter();
+
+    &:nth-child(1) {
+      @include nthsChild(#5e0404);
+      grid-area: header;
+    }
+    &:nth-child(2) {
+      @include nthsChild(#014901);
+      grid-area: section;
+    }
+    &:nth-child(3) {
+      @include nthsChild(#01015e);
+      grid-area: card1;
+    }
+    &:nth-child(4) {
+      @include nthsChild(#545401);
+      grid-area: card2;
+    }
+    &:nth-child(5) {
+      @include nthsChild(#540149);
+      grid-area: card3;
+    }
+  }
+}
+
+#main-03 {
+  @include mainGrid(#aca9a9cb);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 1fr 0.5fr 0.5fr;
+  grid-template-areas:
+    "header header header"
+    "section section section"
+    "card1 sub-card1 card2"
+    "card1 sub-card2 card2";
+
+  section {
+    @include flexCenter();
+
+    &:nth-child(1) {
+      @include nthsChild(#5e0404);
+      grid-area: header;
+    }
+    &:nth-child(2) {
+      @include nthsChild(#014901);
+      grid-area: section;
+    }
+    &:nth-child(3) {
+      @include nthsChild(#01015e);
+      grid-area: card1;
+    }
+    &:nth-child(4) {
+      @include nthsChild(#545401);
+      grid-area: sub-card1;
+    }
+    &:nth-child(5) {
+      @include nthsChild(#540149);
+      grid-area: sub-card2;
+    }
+    &:nth-child(6) {
+      @include nthsChild(#013c54);
+      grid-area: card2;
+    }
+  }
+}
+
+#main-04 {
+  @include mainGrid(#aca9a9cb);
+  grid-template-columns: 1fr 25% 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "header div1 div3"
+    "header div2 section"
+    "footer footer section";
+  section {
+    @include flexCenter();
+
+    &:nth-child(1) {
+      @include nthsChild(#5e0404);
+      grid-area: header;
+    }
+    &:nth-child(2) {
+      @include nthsChild(#014901);
+      grid-area: div1;
+    }
+    &:nth-child(3) {
+      @include nthsChild(#01015e);
+      grid-area: div2;
+    }
+    &:nth-child(4) {
+      @include nthsChild(#545401);
+      grid-area: div3;
+    }
+    &:nth-child(5) {
+      @include nthsChild(#540149);
+      grid-area: section;
+    }
+    &:nth-child(6) {
+      @include nthsChild(#013c54);
+      grid-area: footer;
+    }
+  }
+}

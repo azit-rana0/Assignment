@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main-00 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#main-00 section {
+  flex-grow: 1;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s ease;
+  position: relative;
+}
+#main-00 section .overlay {
+  background: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+#main-00 section .overlay:hover {
+  opacity: 0;
+}
+#main-00 section:hover {
+  transition: all 0.5s ease;
+  flex-grow: 3;
+}
+#main-00 section:nth-child(1) {
+  background-image: url("https://i.pinimg.com/736x/fd/ef/3d/fdef3df1587f481f436e095b8d318561.jpg");
+}
+#main-00 section:nth-child(2) {
+  background-image: url("https://i.pinimg.com/736x/3e/03/3f/3e033f3a663905c2152eb26c0d979eea.jpg");
+}
+#main-00 section:nth-child(3) {
+  background-image: url("https://i.pinimg.com/736x/80/08/2a/80082a10406ad312c1c713cd08458da8.jpg");
+}
+#main-00 section:nth-child(4) {
+  background-image: url("https://i.pinimg.com/736x/55/c3/1c/55c31c39a71dc2003b3bc6893c82d8d7.jpg");
+}
+#main-00 section:nth-child(5) {
+  background-image: url("https://i.pinimg.com/736x/f8/82/3f/f8823f7028296673591dae29c323c621.jpg");
+}
+#main-00 section:nth-child(6) {
+  background-image: url("https://i.pinimg.com/736x/1b/99/a9/1b99a97f98b6c7e1e622a53d2adeae7c.jpg");
+}
+#main-00 section:nth-child(7) {
+  background-image: url("https://i.pinimg.com/736x/ee/57/52/ee575200a368e19ed855fa46d1e42a6e.jpg");
+}
+
+#main-01 {
+  margin-bottom: 2rem;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: rgba(172, 169, 169, 0.7960784314);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 10% 1fr 1fr;
+  grid-template-areas: "header header" "aside section" "footer footer";
+}
+#main-01 section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+}
+#main-01 section:nth-child(1) {
+  background: #5e0404;
+  grid-area: header;
+}
+#main-01 section:nth-child(2) {
+  background: #014901;
+  grid-area: aside;
+}
+#main-01 section:nth-child(3) {
+  background: #01015e;
+  grid-area: section;
+}
+#main-01 section:nth-child(4) {
+  background: #545401;
+  grid-area: footer;
+}
+
+#main-02 {
+  margin-bottom: 2rem;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: rgba(172, 169, 169, 0.7960784314);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 35% 1fr;
+  grid-template-areas: "header header header" "section section section" "card1 card2 card3";
+}
+#main-02 section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+}
+#main-02 section:nth-child(1) {
+  background: #5e0404;
+  grid-area: header;
+}
+#main-02 section:nth-child(2) {
+  background: #014901;
+  grid-area: section;
+}
+#main-02 section:nth-child(3) {
+  background: #01015e;
+  grid-area: card1;
+}
+#main-02 section:nth-child(4) {
+  background: #545401;
+  grid-area: card2;
+}
+#main-02 section:nth-child(5) {
+  background: #540149;
+  grid-area: card3;
+}
+
+#main-03 {
+  margin-bottom: 2rem;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: rgba(172, 169, 169, 0.7960784314);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 1fr 0.5fr 0.5fr;
+  grid-template-areas: "header header header" "section section section" "card1 sub-card1 card2" "card1 sub-card2 card2";
+}
+#main-03 section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+}
+#main-03 section:nth-child(1) {
+  background: #5e0404;
+  grid-area: header;
+}
+#main-03 section:nth-child(2) {
+  background: #014901;
+  grid-area: section;
+}
+#main-03 section:nth-child(3) {
+  background: #01015e;
+  grid-area: card1;
+}
+#main-03 section:nth-child(4) {
+  background: #545401;
+  grid-area: sub-card1;
+}
+#main-03 section:nth-child(5) {
+  background: #540149;
+  grid-area: sub-card2;
+}
+#main-03 section:nth-child(6) {
+  background: #013c54;
+  grid-area: card2;
+}
+
+#main-04 {
+  margin-bottom: 2rem;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background: rgba(172, 169, 169, 0.7960784314);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 25% 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "header div1 div3" "header div2 section" "footer footer section";
+}
+#main-04 section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+}
+#main-04 section:nth-child(1) {
+  background: #5e0404;
+  grid-area: header;
+}
+#main-04 section:nth-child(2) {
+  background: #014901;
+  grid-area: div1;
+}
+#main-04 section:nth-child(3) {
+  background: #01015e;
+  grid-area: div2;
+}
+#main-04 section:nth-child(4) {
+  background: #545401;
+  grid-area: div3;
+}
+#main-04 section:nth-child(5) {
+  background: #540149;
+  grid-area: section;
+}
+#main-04 section:nth-child(6) {
+  background: #013c54;
+  grid-area: footer;
+}/*# sourceMappingURL=style.css.map */
