@@ -163,6 +163,25 @@ body {
   }
 }
 
+.name-rana {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGY5YzUzajduZ2s5dGd6MTY5cDk0M3hmaHZueWQwOWdnZzN4b2xpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* background: linear-gradient(to right, red, blue);
+  -webkit-text-fill-color: transparent; */
+}
+
+.name-rana h1 {
+  font-size: 10vw;
+  color: transparent;
+  /* -webkit-text-stroke: 0.1px rgba(0, 0, 0, 0.7); */
+}
+
 footer {
   margin-top: 2rem;
   width: 100%;
