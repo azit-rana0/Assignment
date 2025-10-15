@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.71);
+  width: 100%;
+  height: 100%;
+  padding: 0.8vw;
+  display: grid;
+  grid-template-columns: 30% 1fr 1fr 1fr;
+  grid-template-rows: 1fr 45%;
+  gap: 0.8vw;
+  grid-template-areas: "side up up up" "side down1 down2 down3";
+}
+main div {
+  border-radius: 10px;
+  overflow: hidden;
+}
+main div:hover img {
+  transform: scale(1.2);
+}
+main div h4 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.586);
+  font-weight: 500;
+  margin-bottom: 0.5px;
+}
+main div .imagediv {
+  width: 100%;
+  height: 100%;
+}
+main div img {
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .div1 {
+  grid-area: side;
+}
+main .div2 {
+  grid-area: up;
+}
+main .div3 {
+  grid-area: down1;
+}
+main .div4 {
+  grid-area: down2;
+}
+main .div5 {
+  grid-area: down3;
+}/*# sourceMappingURL=style.css.map */
