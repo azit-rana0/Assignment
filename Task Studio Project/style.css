@@ -87,6 +87,7 @@ main section.view1 .bottom .text .arrow {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  cursor: pointer;
 }
 main section.view1 .bottom .text .arrow i {
   color: rgba(255, 255, 255, 0.4941176471);
@@ -199,6 +200,7 @@ main section.view5 .arrow {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  cursor: pointer;
   display: none;
 }
 main section.view5 .arrow i {
@@ -251,6 +253,7 @@ main section.view6 .card .icons {
   justify-content: end;
   gap: 0.5rem;
   padding: 1rem;
+  cursor: pointer;
 }
 main section.view6 .card .icons div {
   border-radius: 50%;
@@ -280,11 +283,13 @@ main section.view6 .card .text h2 {
   font-size: 1.3rem;
   font-weight: 400;
   opacity: 0.8;
+  cursor: pointer;
 }
 main section.view6 .card .text p {
   text-transform: uppercase;
   font-weight: 400;
   opacity: 0.8;
+  cursor: pointer;
 }
 main section.view7 {
   width: 100%;
@@ -337,6 +342,7 @@ main section.view7 .bottom .arrow {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  cursor: pointer;
 }
 main section.view7 .bottom .arrow i {
   color: rgba(255, 255, 255, 0.4941176471);
@@ -399,6 +405,7 @@ main section.view8 .content .button {
   color: white;
   opacity: 0.9;
   font-weight: 400;
+  cursor: pointer;
 }
 main section.view8 .content .button i {
   font-size: 1.2rem;
@@ -430,6 +437,7 @@ main section.view9 .azit .icons {
   display: flex;
   justify-content: start;
   gap: 0.5rem;
+  cursor: pointer;
 }
 main section.view9 .azit .icons div {
   border-radius: 50%;
@@ -443,7 +451,12 @@ main section.view9 .azit .icons div i {
   font-size: 1.2rem;
   opacity: 0.5;
 }
-main section.view9 .lists {
+main section.view9 .lists-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view9 .lists-footer .lists {
   background: #1e1e1e;
   border-radius: 0.8rem;
   padding: 2rem;
@@ -451,29 +464,30 @@ main section.view9 .lists {
   flex-direction: column;
   gap: 4rem;
 }
-main section.view9 .lists .page,
-main section.view9 .lists .cms,
-main section.view9 .lists .utility {
+main section.view9 .lists-footer .lists .page,
+main section.view9 .lists-footer .lists .cms,
+main section.view9 .lists-footer .lists .utility {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   text-transform: uppercase;
 }
-main section.view9 .lists .page h3,
-main section.view9 .lists .cms h3,
-main section.view9 .lists .utility h3 {
-  font-size: 1.4rem;
+main section.view9 .lists-footer .lists .page h3,
+main section.view9 .lists-footer .lists .cms h3,
+main section.view9 .lists-footer .lists .utility h3 {
+  font-size: 1.3rem;
   font-weight: 400;
   opacity: 0.8;
 }
-main section.view9 .lists .page p,
-main section.view9 .lists .cms p,
-main section.view9 .lists .utility p {
-  font-size: 1.1rem;
+main section.view9 .lists-footer .lists .page p,
+main section.view9 .lists-footer .lists .cms p,
+main section.view9 .lists-footer .lists .utility p {
+  cursor: pointer;
+  font-size: 1rem;
   font-weight: 400;
   opacity: 0.6;
 }
-main section.view9 .lists .page > button {
+main section.view9 .lists-footer .lists .page > button {
   background-color: #cebd63;
   padding: 1rem 1.5rem;
   width: -moz-fit-content;
@@ -484,8 +498,9 @@ main section.view9 .lists .page > button {
   border-radius: 0.5rem;
   font-weight: 100;
   opacity: 0.8;
+  cursor: pointer;
 }
-main section.view9 .footer {
+main section.view9 .lists-footer .footer {
   background: #1e1e1e;
   padding: 1.5rem;
   border-radius: 0.8rem;
@@ -494,29 +509,31 @@ main section.view9 .footer {
   gap: 2rem;
   align-items: center;
 }
-main section.view9 .footer .copyright {
+main section.view9 .lists-footer .footer .copyright {
   text-align: center;
 }
-main section.view9 .footer .copyright p {
-  font-size: 1.2rem;
+main section.view9 .lists-footer .footer .copyright p {
+  font-size: 1rem;
   word-spacing: 0.5rem;
   color: white;
+  text-transform: uppercase;
   opacity: 0.8;
 }
-main section.view9 .footer .copyright p span {
+main section.view9 .lists-footer .footer .copyright p span {
   padding: 0;
   border-bottom: 1px solid white;
   opacity: 0.6;
   cursor: pointer;
 }
-main section.view9 .footer .arrow {
+main section.view9 .lists-footer .footer .arrow {
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  cursor: pointer;
 }
-main section.view9 .footer .arrow i {
+main section.view9 .lists-footer .footer .arrow i {
   color: rgba(255, 255, 255, 0.4941176471);
   background: #282928;
   border-radius: 50%;
@@ -524,7 +541,7 @@ main section.view9 .footer .arrow i {
   padding: 0.7rem;
   border: 1px solid rgba(128, 128, 128, 0.4941176471);
 }
-main section.view9 .footer .arrow p {
+main section.view9 .lists-footer .footer .arrow p {
   font-size: 1rem;
   font-weight: 500;
   opacity: 0.8;
@@ -655,5 +672,26 @@ main section.view9 .footer .arrow p {
     font-weight: 400;
     line-height: 1;
     font-size: 4.5rem;
+  }
+  main section.view9 {
+    width: 100%;
+    flex-direction: row;
+  }
+  main section.view9 .azit {
+    width: 20%;
+    justify-content: space-between;
+  }
+  main section.view9 .lists-footer {
+    width: 80%;
+  }
+  main section.view9 .lists-footer .lists {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
+  }
+  main section.view9 .lists-footer .footer {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

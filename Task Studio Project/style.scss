@@ -36,6 +36,7 @@ section {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  cursor: pointer;
 
   i {
     color: #ffffff7e;
@@ -241,6 +242,7 @@ main {
         justify-content: end;
         gap: 0.5rem;
         padding: 1rem;
+        cursor: pointer;
         div {
           border-radius: 50%;
           padding: 0.7rem;
@@ -268,11 +270,13 @@ main {
           font-size: 1.3rem;
           font-weight: 400;
           opacity: 0.8;
+          cursor: pointer;
         }
         p {
           text-transform: uppercase;
           font-weight: 400;
           opacity: 0.8;
+          cursor: pointer;
         }
       }
     }
@@ -365,6 +369,7 @@ main {
         color: white;
         opacity: 0.9;
         font-weight: 400;
+        cursor: pointer;
 
         i {
           font-size: 1.2rem;
@@ -396,6 +401,7 @@ main {
         display: flex;
         justify-content: start;
         gap: 0.5rem;
+        cursor: pointer;
         div {
           border-radius: 50%;
           padding: 0.7rem;
@@ -410,66 +416,72 @@ main {
       }
     }
 
-    .lists {
-      background: #1e1e1e;
-      border-radius: 0.8rem;
-      padding: 2rem;
-      @include flexColumn(4rem);
+    .lists-footer {
+      @include flexColumn();
+      .lists {
+        background: #1e1e1e;
+        border-radius: 0.8rem;
+        padding: 2rem;
+        @include flexColumn(4rem);
 
-      .page,
-      .cms,
-      .utility {
-        @include flexColumn(1.5rem);
+        .page,
+        .cms,
+        .utility {
+          @include flexColumn(1.5rem);
 
-        text-transform: uppercase;
-        h3 {
-          font-size: 1.4rem;
-          font-weight: 400;
-          opacity: 0.8;
-        }
-        p {
-          font-size: 1.1rem;
-          font-weight: 400;
-          opacity: 0.6;
-        }
-      }
-
-      .page > button {
-        background-color: #cebd63;
-        padding: 1rem 1.5rem;
-        width: fit-content;
-        border: none;
-        font-size: 1rem;
-        text-transform: uppercase;
-        border-radius: 0.5rem;
-        font-weight: 100;
-        opacity: 0.8;
-      }
-    }
-
-    .footer {
-      background: #1e1e1e;
-      padding: 1.5rem;
-      border-radius: 0.8rem;
-      @include flexColumn(2rem);
-      align-items: center;
-      .copyright {
-        text-align: center;
-        p {
-          font-size: 1.2rem;
-          word-spacing: 0.5rem;
-          color: white;
-          opacity: 0.8;
-          span {
-            padding: 0;
-            border-bottom: 1px solid white;
-            opacity: 0.6;
+          text-transform: uppercase;
+          h3 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.8;
+          }
+          p {
             cursor: pointer;
+            font-size: 1rem;
+            font-weight: 400;
+            opacity: 0.6;
           }
         }
+
+        .page > button {
+          background-color: #cebd63;
+          padding: 1rem 1.5rem;
+          width: fit-content;
+          border: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          border-radius: 0.5rem;
+          font-weight: 100;
+          opacity: 0.8;
+          cursor: pointer;
+        }
       }
-      .arrow {
-        @include arrowButton();
+
+      .footer {
+        background: #1e1e1e;
+        padding: 1.5rem;
+        border-radius: 0.8rem;
+        @include flexColumn(2rem);
+        align-items: center;
+        .copyright {
+          text-align: center;
+          p {
+            font-size: 1rem;
+            word-spacing: 0.5rem;
+            color: white;
+            text-transform: uppercase;
+            opacity: 0.8;
+            span {
+              padding: 0;
+              border-bottom: 1px solid white;
+              opacity: 0.6;
+              cursor: pointer;
+            }
+          }
+        }
+        .arrow {
+          @include arrowButton();
+        }
       }
     }
   }
@@ -628,6 +640,30 @@ main {
             line-height: 1;
             font-size: 4.5rem;
           }
+        }
+      }
+    }
+
+    section.view9 {
+      width: 100%;
+      flex-direction: row;
+      .azit {
+        width: 20%;
+        justify-content: space-between;
+      }
+
+      .lists-footer {
+        width: 80%;
+        .lists {
+          width: 100%;
+          flex-direction: row;
+          justify-content: space-between;
+          padding:4rem ;
+        }
+
+        .footer{
+          flex-direction: row;
+          justify-content: space-between;
         }
       }
     }
