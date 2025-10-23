@@ -35,8 +35,12 @@ main {
   }
 
   section.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     width: 100%;
-    height: 100vh;
     background-color: #1a68d3;
     background-image: radial-gradient(
         ellipse at bottom,
@@ -60,7 +64,7 @@ main {
 
       .logo {
         img {
-          width: 80%;
+          width: 82%;
         }
       }
 
@@ -76,9 +80,126 @@ main {
     .hero-heading {
       font-size: 3rem;
       text-align: center;
-      padding-top: 5rem;
+      padding-top: 5.2rem;
       color: white;
       padding-inline: 2rem;
+    }
+
+    .gallary {
+      padding: 1.5rem;
+      width: 100%;
+      overflow-x: scroll;
+      border: 2px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      .left {
+        border: 5px solid yellow;
+        width: 38%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        & > img {
+          width: 100%;
+          border-radius: 1rem;
+          object-fit: cover;
+        }
+
+        .left-inner {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          gap: 1.5rem;
+
+          img {
+            width: 40%;
+            object-fit: cover;
+            border-radius: 1rem;
+
+            .img1 {
+              margin-top: 50rem;
+            }
+          }
+        }
+      }
+
+      .center {
+        width: 28%;
+        border: 5px solid red;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .right {
+        width: 38%;
+        border: 5px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        .right-left {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          img {
+            width: 100%;
+            border-radius: 1rem;
+            object-fit: cover;
+          }
+        }
+        .right-right {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          gap: 1.5rem;
+          & > img:nth-child(1) {
+            width: 100%;
+            height: 100%;
+            // object-fit: cover;
+          }
+
+          & > img:nth-child(2) {
+            width: 60%;
+            object-fit: cover;
+            border-radius: 1rem;
+          }
+        }
+      }
+    }
+
+    .paragraph-button {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+
+      p {
+        text-align: center;
+        font-size: 2.2rem;
+        padding-inline: 2rem;
+        color: white;
+      }
+
+      button {
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 0.7rem 2rem;
+        color: #0568d6;
+        font-weight: 500;
+        border: none;
+        background: white;
+        border-radius: 30px;
+      }
     }
   }
 }

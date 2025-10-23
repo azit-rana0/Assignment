@@ -33,8 +33,12 @@ main div.title span i {
   font-weight: 100;
 }
 main section.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   width: 100%;
-  height: 100vh;
   background-color: #1a68d3;
   background-image: radial-gradient(ellipse at bottom, #1a68d3 5%, transparent 60%), linear-gradient(136deg, transparent, #71c7ee 290%), linear-gradient(115deg, #9d9af1, transparent 40%), linear-gradient(180deg, transparent 0, #1a68d3 70%), radial-gradient(ellipse at -70% -180%, transparent 80%, #71c7ee 0), radial-gradient(ellipse at bottom, #1a68d3 40%, transparent 80%), radial-gradient(ellipse at 5% 340%, transparent 80%, #bfc2f4 0);
   overflow: hidden;
@@ -47,7 +51,7 @@ main section.hero header {
   padding-right: 2.5rem;
 }
 main section.hero header .logo img {
-  width: 80%;
+  width: 82%;
 }
 main section.hero header .menu i {
   color: white;
@@ -57,7 +61,116 @@ main section.hero header .menu i {
 main section.hero .hero-heading {
   font-size: 3rem;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 5.2rem;
   color: white;
   padding-inline: 2rem;
+}
+main section.hero .gallary {
+  padding: 1.5rem;
+  width: 100%;
+  overflow-x: scroll;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+main section.hero .gallary .left {
+  border: 5px solid yellow;
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main section.hero .gallary .left > img {
+  width: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.hero .gallary .left .left-inner {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1.5rem;
+}
+main section.hero .gallary .left .left-inner img {
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+main section.hero .gallary .left .left-inner img .img1 {
+  margin-top: 50rem;
+}
+main section.hero .gallary .center {
+  width: 28%;
+  border: 5px solid red;
+}
+main section.hero .gallary .center img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.hero .gallary .right {
+  width: 38%;
+  border: 5px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main section.hero .gallary .right .right-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section.hero .gallary .right .right-left img {
+  width: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.hero .gallary .right .right-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1.5rem;
+}
+main section.hero .gallary .right .right-right > img:nth-child(1) {
+  width: 100%;
+  height: 100%;
+}
+main section.hero .gallary .right .right-right > img:nth-child(2) {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+main section.hero .paragraph-button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+main section.hero .paragraph-button p {
+  text-align: center;
+  font-size: 2.2rem;
+  padding-inline: 2rem;
+  color: white;
+}
+main section.hero .paragraph-button button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  color: #0568d6;
+  font-weight: 500;
+  border: none;
+  background: white;
+  border-radius: 30px;
 }
