@@ -33,13 +33,13 @@ main div.title span i {
   font-weight: 100;
 }
 main section.hero {
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   width: 100%;
-  height: 100vh;
   background-color: #1a68d3;
   background-image: radial-gradient(ellipse at bottom, #1a68d3 5%, transparent 60%), linear-gradient(136deg, transparent, #71c7ee 290%), linear-gradient(115deg, #9d9af1, transparent 40%), linear-gradient(180deg, transparent 0, #1a68d3 70%), radial-gradient(ellipse at -70% -180%, transparent 80%, #71c7ee 0), radial-gradient(ellipse at bottom, #1a68d3 40%, transparent 80%), radial-gradient(ellipse at 5% 340%, transparent 80%, #bfc2f4 0);
   overflow: hidden;
@@ -90,4 +90,291 @@ main section.hero .paragraph-button button {
   border: none;
   background: white;
   border-radius: 30px;
+}
+main section.view {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+main section.view div.view1 {
+  width: 100%;
+  padding-block: 2rem;
+}
+main section.view div.view1 > p {
+  text-align: center;
+  font-size: 2rem;
+  padding-inline: 1.5rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+main section.view div.view1 div {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+main section.view div.view1 div p {
+  padding: 0.8rem 1.8rem;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #0468d7;
+  cursor: pointer;
+}
+main section.view div.view1 div p:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+main section.view div.view1 div p:active {
+  background: #0468d7;
+  color: white;
+}
+main section.view div.view2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main section.view div.view2 video {
+  width: 100%;
+}
+main section.view div.view2 div {
+  padding: 3rem;
+}
+main section.view div.view2 div h1 {
+  color: #14c2ad;
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+main section.view div.view2 div p {
+  text-align: start;
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  padding-bottom: 3rem;
+  font-weight: 500;
+}
+main section.view div.view2 div button {
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.7rem 2rem;
+  color: #0468d7;
+  border: 1px solid #0468d7;
+  font-weight: 600;
+  border-radius: 30px;
+  background: white;
+}
+main section.view div.view3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main section.view div.view3 img {
+  padding: 2rem;
+  width: 100%;
+}
+main section.view div.view3 div {
+  padding: 1.8rem;
+}
+main section.view div.view3 div h3 {
+  color: #13b9fd;
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+}
+main section.view div.view3 div h1 {
+  font-size: 3.1rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  padding-bottom: 2rem;
+}
+main section.view div.view3 div p {
+  text-align: start;
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  padding-bottom: 2rem;
+  font-weight: 500;
+}
+main section.view div.view3 div button {
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.7rem 2rem;
+  color: #0468d7;
+  border: 1px solid #0468d7;
+  font-weight: 600;
+  border-radius: 30px;
+  background: white;
+}
+main section.view div.view4 div h3 {
+  color: #14c2ad;
+}
+main section.view div.view5 div h3 {
+  color: #f25d50;
+}
+main section.view div.view6 div h3 {
+  color: #833ef2;
+}
+main section.view div.view7 {
+  width: 100%;
+  padding: 1.8rem;
+}
+main section.view div.view7 > div {
+  background-image: linear-gradient(90deg, #ff8485, #f9eac6);
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.view div.view7 > div div.content {
+  padding: 3.5rem;
+}
+main section.view div.view7 > div div.content h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+}
+main section.view div.view7 > div div.content h1 {
+  font-size: 2.1rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  padding-bottom: 2rem;
+}
+main section.view div.view7 > div div.content p {
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background: transparent;
+  position: relative;
+}
+main section.view div.view7 > div div.content p i {
+  position: absolute;
+  right: -1.3rem;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+main section.view div.view7 > div div.content p:hover > i {
+  transform: translateX(3px);
+}
+main section.view div.view7 > div .image {
+  width: 100%;
+  margin-bottom: -0.25rem;
+}
+main section.view div.view7 > div .image img {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  main {
+    width: 100%;
+  }
+  main section.view {
+    gap: 2rem;
+  }
+  main section.view div.view1 {
+    width: 53%;
+    margin: auto;
+  }
+  main section.view div.view1 div {
+    justify-content: space-evenly;
+  }
+  main section.view div.view1 div p {
+    padding: 0.8rem 3.8rem;
+  }
+  main section.view div.view2 {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+  main section.view div.view2 video {
+    width: 60%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section.view div.view2 div {
+    width: 40%;
+    padding: 0;
+  }
+  main section.view div.view2 div p {
+    width: 60%;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+  }
+  main section.view div.view3 {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-inline: 10rem;
+  }
+  main section.view div.view3 img {
+    width: 40%;
+  }
+  main section.view div.view3 div {
+    width: 50%;
+  }
+  main section.view div.view3 div h1 {
+    line-height: 4rem;
+    font-size: 3.8rem;
+  }
+  main section.view div.view3 div p {
+    width: 90%;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  main section.view div.view4 {
+    flex-direction: row;
+    gap: 10rem;
+  }
+  main section.view div.view4 div p {
+    width: 90%;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  main section.view div.view5 div p {
+    width: 85%;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  main section.view div.view6 {
+    flex-direction: row;
+    gap: 10rem;
+  }
+  main section.view div.view6 div p {
+    width: 90%;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  main section.view div.view7 {
+    width: 100%;
+    padding: 5rem 12rem;
+  }
+  main section.view div.view7 > div {
+    flex-direction: row;
+  }
+  main section.view div.view7 > div div.content {
+    width: 65%;
+  }
+  main section.view div.view7 > div div.content h1 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  main section.view div.view7 > div .image {
+    width: 35%;
+    position: relative;
+  }
+  main section.view div.view7 > div .image img {
+    width: 100%;
+    position: absolute;
+    bottom: 0.25rem;
+    right: -0.5rem;
+  }
 }
