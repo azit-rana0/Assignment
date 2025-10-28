@@ -23,7 +23,7 @@ main {
     width: 100%;
     background: linear-gradient(124.64deg, rgb(2, 125, 253), rgb(131, 62, 242));
     text-align: center;
-    padding-block: 1rem;
+    padding-block: 1.1rem;
     span {
       color: white;
       font-size: 0.95rem;
@@ -65,12 +65,17 @@ main {
       padding-right: 2.5rem;
 
       .logo {
+        cursor: pointer;
         img {
           width: 82%;
         }
       }
 
+      .menu-lists {
+        display: none;
+      }
       .menu {
+        display: block;
         i {
           color: white;
           font-size: 1.4rem;
@@ -85,6 +90,15 @@ main {
       padding-top: 5.2rem;
       color: white;
       padding-inline: 2rem;
+    }
+
+    .hero-image {
+      height: 80vh;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .paragraph-button {
@@ -329,6 +343,84 @@ main {
 @media (min-width: 900px) {
   main {
     width: 100%;
+
+    section.hero {
+      header {
+        padding-inline: 3.4rem;
+        .menu {
+          display: none;
+        }
+        .menu-lists {
+          display: block;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 700;
+            padding: 0.75rem 1.1rem;
+            border-radius: 3rem;
+            transition: all 0.3s ease;
+            &:hover {
+              background-color: hsla(0, 0%, 98%, 0.15);
+            }
+
+            &:last-child {
+              background-color: #fff;
+              color: #0468d7;
+              padding-inline: 2.2rem;
+              margin-left: 0.8rem;
+            }
+          }
+          div {
+            padding: 0.75rem 0.9rem;
+            border-radius: 3rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+              background-color: hsla(0, 0%, 98%, 0.15);
+            }
+            i {
+              font-size: 0.92rem;
+              font-weight: 500;
+              color: white;
+            }
+          }
+        }
+      }
+
+      .hero-heading {
+        font-size: 4rem;
+      }
+      .hero-image {
+        width: 1515px;
+        height: 114vh;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .paragraph-button {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        p {
+          text-align: center;
+          font-size: 2.2rem;
+          padding-inline: 2rem;
+          color: white;
+        }
+      }
+    }
+
     section.view {
       gap: 2rem;
       div.view1 {
