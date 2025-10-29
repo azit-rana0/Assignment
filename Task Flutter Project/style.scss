@@ -338,6 +338,27 @@ main {
       }
     }
   }
+
+  footer {
+    width: 100%;
+    margin-top: 3rem;
+    background-color: #f9f8fa;
+    .logo-lists {
+      display: flex;
+      flex-direction: column;
+      gap: 2.8rem;
+      padding: 4rem;
+      width: 100%;
+      border: 2px solid red;
+      .logo {
+        width: 45%;
+        cursor: pointer;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 900px) {
