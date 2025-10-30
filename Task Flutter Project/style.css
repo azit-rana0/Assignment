@@ -309,6 +309,11 @@ main footer .logo-lists .logo {
 main footer .logo-lists .logo img {
   width: 100%;
 }
+main footer .logo-lists .lists-container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
 
 @media (min-width: 900px) {
   main {

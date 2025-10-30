@@ -357,6 +357,12 @@ main {
           width: 100%;
         }
       }
+
+      .lists-container {
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
